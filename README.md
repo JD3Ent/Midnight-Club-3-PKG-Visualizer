@@ -88,4 +88,22 @@ The parser detects vertex groups using specific binary patterns:
 ## Installation & Dependencies
 
 ### Requirements
-Ensure you have Python 3 installed and install the required dependencies:
+Ensure you have Python 3 installed and install the required dependencies using 5he requirements.txt file
+### Running the Viewer
+Run the script with: python main.py
+
+## Exporting to OBJ
+- Click **"Exportar para OBJ"** to save the model.
+- The exported `.obj` file contains:  
+  - **Vertex positions (`v x y z`)**  
+  - **UV coordinates (`vt u v`)**  
+  - **Face definitions (`f v1/vt1 v2/vt2 v3/vt3`)**  
+
+## Troubleshooting
+- **File not loading?** Ensure it is a valid `.pck` model file from Midnight Club 3 Dub Edition or Dub Edition Remix.
+- **Model appears too small or large?** Toggle model scaling in the Settings Panel.  
+- **Missing UVs?** Some `.pck` files may not contain UV data.  
+
+## Credits
+- Developed for Midnight Club 3 model viewing  
+- Uses PyVista and PyQt5 for visualization
